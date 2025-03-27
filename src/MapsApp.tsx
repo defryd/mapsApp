@@ -1,10 +1,13 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { StackNavigator } from './presentation/navigation/StackNavigator'
+import { PermissionsChecker } from './presentation/providers/PermissionChecker'
 
 export const MapsApp = () => {
     return (
         <NavigationContainer>
-            <StackNavigator/>
+            <PermissionsChecker>
+                <StackNavigator />
+            </PermissionsChecker>
         </NavigationContainer>
     )
 }

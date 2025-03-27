@@ -15,6 +15,7 @@ export const StackNavigator = () => {
     return (
         <Stack.Navigator
         initialRouteName="LoadingScreen"
+        // initialRouteName="PermissionsScreen"
             screenOptions={{
                 headerShown: false,
                 cardStyle: {
